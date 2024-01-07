@@ -5,7 +5,7 @@
 
 export function getFirstTenNumbers() {
   // Your code goes here...
-
+return [];
 }
 
 // === TEST YOURSELF ===
