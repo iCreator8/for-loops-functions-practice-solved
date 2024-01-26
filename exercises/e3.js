@@ -10,10 +10,20 @@
 
 export function getAverage(array) {
   // Your code goes here...
-
+if (array.length === 0) {
+  return 0;
+}
+let sum = 0;
+for (let i = 0; i < array.length; i++) {
+  sum += array[i];
 }
 
-
+const average = sum / array.length;
+return average;
+}
+/* const numbers = [22, 45, 4, 65];
+const averageValue = getAverage(numbers);
+console.log(averageValue); */
 /** 
  * PART 2
  * Create a getStringSum(str) function that returns the sum of any integers that are in the string.
@@ -23,8 +33,17 @@ export function getAverage(array) {
 
 export function getStringSum(str) {
   // Your code goes here...
+  let sum = 0;
 
+  for (let i = 0; i < str.length; i++) {
+    if (!isNaN(parseInt(str[i]))) {
+      sum += parseInt(str[i]);
+    }
+  }
+
+  return sum;
 }
+
 
 
 // === TEST YOURSELF ===
