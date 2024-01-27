@@ -44,7 +44,9 @@ export function getStringSum(str) {
   return sum;
 }
 
-
+/* const randomData = "GH2U87A";
+const randomResults = getStringSum(randomData);
+console.log(randomResults); */
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
