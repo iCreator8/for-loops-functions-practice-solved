@@ -34,7 +34,6 @@ console.log(averageValue); */
 export function getStringSum(str) {
   // Your code goes here...
   let sum = 0;
-
   for (let i = 0; i < str.length; i++) {
     if (!isNaN(parseInt(str[i]))) {
       sum += parseInt(str[i]);
