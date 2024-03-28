@@ -6,8 +6,21 @@
 
 export function getClientsWithBalanceOverOneHundred(array) {
   // Your code goes here...
+  const clientsWithBalanceOver100 = [];
 
+  for (let i = 0; i < array.length; i++) {
+    const bankAccount = array[i];
+    if (bankAccount.balance > 100) {
+      clientsWithBalanceOver100.push(bankAccount);
+    }
+  }
+
+  return clientsWithBalanceOver100;
 }
+
+// const clientsWithBalanceOver100 = getClientsWithBalanceOverOneHundred(bankAccounts);
+// console.log(clientsWithBalanceOver100);
+
 
 
 

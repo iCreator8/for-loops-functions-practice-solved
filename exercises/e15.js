@@ -6,8 +6,25 @@
 
 export function concatArrays(arr1, arr2) {
   // Your code goes here...
+   const concatenatedArray = [];
 
+  // Add elements from arr1 to concatenatedArray
+  for (let i = 0; i < arr1.length; i++) {
+    concatenatedArray.push(arr1[i]);
+  }
+
+  // Add elements from arr2 to concatenatedArray
+  for (let j = 0; j < arr2.length; j++) {
+    concatenatedArray.push(arr2[j]);
+  }
+
+  return concatenatedArray;
 }
+
+const concatenatedArray = concatArrays(['d', 'r', 'a'], ['f', 'y']);
+console.log(concatenatedArray); 
+
+
 
 
 

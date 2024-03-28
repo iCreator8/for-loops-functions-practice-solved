@@ -7,8 +7,17 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+  
+  return false;
 }
+
+console.log(doesArrayInclude(['a', 'b', 'c'], 'a')); 
+console.log(doesArrayInclude(['a', 'b', 'c'], 'f')); 
 
 
 

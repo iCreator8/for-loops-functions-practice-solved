@@ -7,8 +7,25 @@
 
 export function flatArrays(array) {
   // Your code goes here...
+  const flatArray = [];
 
+  function flatten(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      if (Array.isArray(arr[i])) {
+        flatten(arr[i]);
+      } else {
+        flatArray.push(arr[i]);
+      }
+    }
+  }
+
+  flatten(array);
+  return flatArray;
 }
+
+const flattenedArray = flatArrays([['d', 'r'], 'z', 'b', ['f', 'y']]);
+console.log(flattenedArray); 
+
 
 
 
